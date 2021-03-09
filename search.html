@@ -32,21 +32,24 @@
         <div class="container">
             <h2>Project Gallery</h2>
         </div>
-        <div class="container bg-light p3">
-            <form action="" name="searchForm">
-                <input type="text" name="searchTerm" id="" placeholder="Project Name, Authors, Abstract, Tags">
-                <label>Search By:</label>> <select type="text" name="searchType" id="" label="Search By">
-                    <option value="Name">Name</option>
-                    <option value="Abstract">Abstract</option>
-                    <option value="Authors">Authors</option>
-                    <option value="Tags">Tags</option>
-                </select>
-                <input type="submit" value="Search">
-            </form>
+        <div class="container bg-light p3 form-group">
+            <div class="form-row">
+                <form action="" name="searchForm">
+                    <input class="form-control form-control-lg" type="text" name="searchTerm" id="" placeholder="Project Name, Authors, Abstract, Tags">
+                    <div class="container"><label class="form-label">Search By</label></div> 
+                    <select class="form-control form-control-lg" type="text" name="searchType" id="" label="Search By">
+                        <option value="Name">Name</option>
+                        <option value="Abstract">Abstract</option>
+                        <option value="Authors">Authors</option>
+                        <option value="Tags">Tags</option>
+                    </select>
+                    <input class="btn btn-primary btn-lg" type="submit" value="Search">
+                </form>
+            </div>
         </div>
 
         <div class="container row">
-            <h3 class=" p-2">All Projects</h3> <H5 class="text-muted p-2">(0 results)</H5>
+            <h3 class="">All Projects</h3> <H5 class="text-muted">(0 results)</H5>
         </div>
         <div class="container">
             <div class="row">
