@@ -47,42 +47,45 @@
         </div>
             </div>
 
-            <h2>
-                Edit Project
-            </h2>
-      <div class="row mx-auto">
+            
+      <div class=" container row mx-auto d-flex justify-content-around">
         <div class="">
+            <div class=" pt-5">
+                <h2>
+                    Edit Project
+                </h2>
+            </div>
             <form action="" name="editProject">
-                <div class="form-group">
+                <div class="col form-group w-100 ">
                   <label class="form-label">Project Name </label>
                   <input class="form-control" type="text" name="name" id="" label="Project Name:">
                 </div>
-                <div class="form-group">
+                <div class="col w-100 form-group">
                   <label class="form-label">Project Abstract</label>
                   <textarea class="form-control" name="abstract" id="" cols="30" rows="3" name="abstract" label="Project Abstract:"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="col w-100 form-group">
                   <label class="form-label">Authors</label> 
                   <input class="form-control" type="text" name="authors" id="" label="Authors:">
                 </div>
-                <div class="form-group">
+                <div class="col w-100 form-group">
                   <label class="form-label">Tag(s)</label> 
                   <input class="form-control" type="text" name="tags" id="" label="Tag(s):">
                 </div>
                 <input class="btn btn-primary" type="submit" value="submit">
             </form>
         </div>
-        <div class="col w-25">
-            <h3>Manage Project Files </h3>
-            <div class="form-group">
+        <div class="col">
+            <div class="pt-5"><h3>Manage Project Files </h3></div>
+            <div class="col form-group">
               <label class="form-label">Upload File</label>
               <input class="form-control w-25" type="file" name="projectFile" id="" label="Upload File:">
             </div>
-            <div class="card">
-                <div class="card-header">
+            <div class=" card w-25">
+                <div class="col card-header">
                     Project Files
                 </div>
-                <div class="card-body text-align-center">
+                <div class="col card-body">
                     No Files Uploaded Yet
                 </div>
             </div>
