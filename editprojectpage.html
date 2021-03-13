@@ -3,50 +3,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
     <title>Document</title>
     
 </head>
 <body>
-    
-<header>
-        <h1>Project Explorer</h1>
-        <h2>One Stop Database for Academic Projects</h2>
-</header>
-    <nav>
-        
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-    </nav>
+    <header class="fluid-container">
+        <nav class="navbar navbar-light bg-primary navbar-expand-lg">
+            <div class="m-2 text-white p-2">
+                <h1>Project Explorer</h1>
+            </div>
+            <form class="form-inline">
+                <label class="sr-only" for="searchForm">searchForm</label>
+                <input class="form-control  mt-4 mr-2 " type="text" placeholder="Search Projects" name="searchForm">
+                <button type="button" class="btn btn-outline-light mt-4">Search</button>
+            </form>
+            <div class="mr-auto p-2">
+                <a class=" text-white p-2" href="createproject.html">Submit</a>
+            </div>
+            <div>
+                <a class="text-white p-2" href="register.html">Sign Up </a>
+                <a class="text-white p-2" href="login.html">Login</a>
+            </div>
+            <!-- Navbar content -->
+          </nav>
+    </header>    
     <main>
-      <div>
-        <h2>Project 1</h2>
-        <ul>
-            <li>
-                Created By:
-            </li>
-            <li>
-                Date Created:
-            </li>
-            <li>
-                Last Updated:
-            </li>
-        </ul>
-      </div>
-      <div>
-          <h2>
-              Edit Project
-          </h2>
-          <form action="" name="editProject">
-              <h4>Project Name: </h4><input type="text" name="name" id="" label="Project Name:">
-              <h4>Project Abstract:</h4> <textarea name="abstract" id="" cols="30" rows="3" name="abstract" label="Project Abstract:"></textarea>
-              <h4>Authors:</h4> <input type="text" name="authors" id="" label="Authors:">
-              <h4>Tag(s)</h4> <input type="text" name="tags" id="" label="Tag(s):">
-              <h4>Upload File:</h4> <input type="file" name="projectFile" id="" label="Upload File:">
-              <input type="submit" value="submit">
-          </form>
+        <h2 class="container">Project 1</h2>
+        <div class="container">
+            <div class="row d-flex justify-content-between bg-light">
+            <div class="p-2">
+                Created By <br>Timi Ojo
+            </div>
+            <div class="p-2">
+                Date Created <br> 2020-03-20
+            </div>
+            <div class="p-2">
+                Last Updated <br> 2020-03-20
+            </div >
+            <div>
+                <input class="btn btn-primary m-3" type="submit" value="View Project" >
+            </div>
+        </div>
+            </div>
+
+            <h2>
+                Edit Project
+            </h2>
+      <div class="row mx-auto">
+        <div class="">
+            <form action="" name="editProject">
+                <div class="form-group">
+                  <label class="form-label">Project Name </label>
+                  <input class="form-control" type="text" name="name" id="" label="Project Name:">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Project Abstract</label>
+                  <textarea class="form-control" name="abstract" id="" cols="30" rows="3" name="abstract" label="Project Abstract:"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Authors</label> 
+                  <input class="form-control" type="text" name="authors" id="" label="Authors:">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Tag(s)</label> 
+                  <input class="form-control" type="text" name="tags" id="" label="Tag(s):">
+                </div>
+                <input class="btn btn-primary" type="submit" value="submit">
+            </form>
+        </div>
+        <div class="col w-25">
+            <h3>Manage Project Files </h3>
+            <div class="form-group">
+              <label class="form-label">Upload File</label>
+              <input class="form-control w-25" type="file" name="projectFile" id="" label="Upload File:">
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Project Files
+                </div>
+                <div class="card-body text-align-center">
+                    No Files Uploaded Yet
+                </div>
+            </div>
+        </div>
       </div>
     </main>
+    <footer>
+        <div class="container bg-light d-flex justify-content-end ">
+            <div class="row">
+                <div class="mt-3 mb-3 mr-1 text-muted">
+                    Project Explorer C 2020-
+                </div>
+                <div class="mt-3 mb-3 mr-1">Edconnect</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
