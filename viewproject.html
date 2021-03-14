@@ -46,21 +46,49 @@
         </div>
             </div>
         <div>
-            <h3>Project Abstract</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                 <br>tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut 
-                 venenatis tellus in. Facilisi cras fermentum odio eu feugiat pretium. <br> Pulvinar 
-                 neque laoreet suspendisse interdum consectetur libero. Posuere ac ut <br> consequat semper viverra 
-                 nam. Ac turpis egestas integer eget aliquet nibh praesent tristique. </p>
-        </div>
-        <div>
-            <h2>Project Details</h2>
-            <ul>
-                <li>Authors: John Doe, Jane Doe</li>
-                <li>Tags: #Asphyxia, #GSW</li>
-                <li>Project Files: <a href="">File 1</a>, <a href="">File 2</a>. The files can link to anywhere for now.</li>
-            </ul>
-        </div>
+            <div class=" container row mx-auto d-flex justify-content-around">
+                <div class="">
+                    <div class=" pt-5">
+                        <h2>
+                            Edit Project
+                        </h2>
+                    </div>
+                    <form action="" name="editProject">
+                        <div class="col form-group w-100 ">
+                          <label class="form-label">Project Name </label>
+                          <input class="form-control" type="text" name="name" id="" label="Project Name:">
+                        </div>
+                        <div class="col w-100 form-group">
+                          <label class="form-label">Project Abstract</label>
+                          <textarea class="form-control" name="abstract" id="" cols="30" rows="3" name="abstract" label="Project Abstract:"></textarea>
+                        </div>
+                        <div class="col w-100 form-group">
+                          <label class="form-label">Authors</label> 
+                          <input class="form-control" type="text" name="authors" id="" label="Authors:">
+                        </div>
+                        <div class="col w-100 form-group">
+                          <label class="form-label">Tag(s)</label> 
+                          <input class="form-control" type="text" name="tags" id="" label="Tag(s):">
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="submit">
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="pt-5"><h3>Manage Project Files </h3></div>
+                    <div class="col form-group">
+                      <label class="form-label">Upload File</label>
+                      <input class="form-control w-25" type="file" name="projectFile" id="" label="Upload File:">
+                    </div>
+                    <div class=" card w-25">
+                        <div class="col card-header">
+                            Project Files
+                        </div>
+                        <div class="col card-body">
+                            No Files Uploaded Yet
+                        </div>
+                    </div>
+                </div>
+              </div>
     </main>
     <footer>
         <div class="container bg-light d-flex justify-content-end ">
